@@ -1,5 +1,5 @@
-%define version 20040611
-%define release %mkrel 3
+%define version 20060219
+%define release %mkrel 1
 
 #
 # NOTE:
@@ -89,5 +89,3 @@ fi
 %config %{_sysconfdir}/timidity/timidity-freepats.cfg
 %config %{_sysconfdir}/timidity/freepats
 %{_datadir}/timidity/freepats
-
-
