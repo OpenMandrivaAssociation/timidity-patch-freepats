@@ -1,5 +1,5 @@
 %define version 20060219
-%define release %mkrel 1
+%define release %mkrel 2
 
 #
 # NOTE:
@@ -86,6 +86,6 @@ fi
 %files
 %defattr(-,root,root)
 %doc README COPYING
-%config %{_sysconfdir}/timidity/timidity-freepats.cfg
-%config %{_sysconfdir}/timidity/freepats
+%config(noreplace) %{_sysconfdir}/timidity/timidity-freepats.cfg
+%config(noreplace)  %{_sysconfdir}/timidity/freepats
 %{_datadir}/timidity/freepats
