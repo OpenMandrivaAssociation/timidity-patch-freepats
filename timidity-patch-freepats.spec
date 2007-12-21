@@ -24,6 +24,7 @@ URL:		http://freepats.opensrc.org/
 Source0:	http://freepats.opensrc.org/freepats-%{version}.tar.bz2
 Source1:	timidity-freepats.cfg.bz2
 Source2:	freepats.cfg.bz2
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Provides:	timidity-instruments = %{patch_pkg_version}
 Obsoletes:	timidity-instruments <= 1.0-19mdk
