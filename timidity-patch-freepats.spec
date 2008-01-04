@@ -1,5 +1,5 @@
 %define version 20060219
-%define release %mkrel 6
+%define release %mkrel 7
 
 #
 # NOTE:
@@ -75,8 +75,8 @@ rm -rf %{buildroot}
 %post
 %{_sbindir}/update-alternatives --install %{_sysconfdir}/timidity/timidity.cfg timidity.cfg %{_sysconfdir}/timidity/timidity-freepats.cfg 20
 
-%preun
-if [ "$?" = "0" ]; then
+%postun
+if [ "$1" = "0" ]; then
   %{_sbindir}/update-alternatives --remove timidity.cfg %{_sysconfdir}/timidity/timidity-freepats.cfg
 fi
 
