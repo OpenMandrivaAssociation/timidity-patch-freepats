@@ -1,5 +1,5 @@
 %define version 20060219
-%define release %mkrel 7
+%define release %mkrel 8
 
 #
 # NOTE:
@@ -17,7 +17,7 @@
 Name:		timidity-patch-freepats
 Version:	%{version}
 Release:	%{release}
-Summary:	Free patch set for MIDI audio synthesis
+Summary:	Patch set for MIDI audio synthesis
 Group:		Sound
 License:	GPL
 URL:		http://freepats.opensrc.org/
