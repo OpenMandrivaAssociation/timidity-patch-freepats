@@ -1,5 +1,5 @@
 %define version 20060219
-%define release %mkrel 8
+%define release %mkrel 9
 
 #
 # NOTE:
@@ -22,8 +22,8 @@ Group:		Sound
 License:	GPL
 URL:		http://freepats.opensrc.org/
 Source0:	http://freepats.opensrc.org/freepats-%{version}.tar.bz2
-Source1:	timidity-freepats.cfg.bz2
-Source2:	freepats.cfg.bz2
+Source1:	timidity-freepats.cfg
+Source2:	freepats.cfg
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Provides:	timidity-instruments = %{patch_pkg_version}
@@ -66,8 +66,8 @@ mkdir -p %{buildroot}%{_datadir}/timidity/freepats
 cp -a Drum_000 Tone_000 %{buildroot}%{_datadir}/timidity/freepats/
 
 mkdir -p %{buildroot}%{_sysconfdir}/timidity/freepats
-bzip2 -dc %{SOURCE1} > %{buildroot}%{_sysconfdir}/timidity/timidity-freepats.cfg
-bzip2 -dc %{SOURCE2} > %{buildroot}%{_sysconfdir}/timidity/freepats/freepats.cfg
+install %{SOURCE1} %{buildroot}%{_sysconfdir}/timidity/timidity-freepats.cfg
+install %{SOURCE2} %{buildroot}%{_sysconfdir}/timidity/freepats/freepats.cfg
 
 %clean
 rm -rf %{buildroot}
