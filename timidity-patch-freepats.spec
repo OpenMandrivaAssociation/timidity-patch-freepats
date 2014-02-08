@@ -1,5 +1,5 @@
 %define version 20060219
-%define release %mkrel 15
+%define release 16
 
 #
 # NOTE:
