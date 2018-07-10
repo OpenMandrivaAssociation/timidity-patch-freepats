@@ -1,5 +1,5 @@
 %define version 20060219
-%define release 23
+%define release 24
 
 #
 # NOTE:
