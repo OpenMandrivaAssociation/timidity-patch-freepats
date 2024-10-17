@@ -20,7 +20,7 @@ Release:	%{release}
 Summary:	Patch set for MIDI audio synthesis
 Group:		Sound
 License:	GPL
-URL:		http://freepats.opensrc.org/
+URL:		https://freepats.opensrc.org/
 Source0:	http://freepats.opensrc.org/freepats-%{version}.tar.bz2
 Source1:	timidity-freepats.cfg
 Source2:	freepats.cfg
